@@ -9,6 +9,9 @@ RUN apt-get -y update && \
 #Copy mirror list
 COPY mirror.list /etc/apt/mirror.list
 
+#Dist to download
+ENV dist=xenial
+
 #Copy run file
 COPY run.sh /opt/run.sh
 
