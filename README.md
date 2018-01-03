@@ -11,11 +11,11 @@ Default distro to download is xenial.
 Use this script to download xenial repos -
 
 ```
-docker run --name mirror_test -v /opt/:/var/spool/apt-mirror/ apt-mirror-downloader
+docker run --name xenial_mirror -v /opt/mirror/:/var/spool/apt-mirror/ choopka/apt-mirror-downloader
 ```
 
-To download repo of your choice - 
+To download repo of your choice (e.g. trusty)- 
 
 ```
-docker run --name mirror_test -e dist=zoomba -v volume:/var/spool/apt-mirror/ apt-mirror-downloader
+docker run --name trusty_mirror -e dist=trusty -v /opt/mirror/:/var/spool/apt-mirror/ choopka/apt-mirror-downloader
 ```
