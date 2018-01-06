@@ -1,4 +1,4 @@
-#!/bin/bash -xe
+#!/bin/bash
 
 run_apt_mirror(){
 	cat /etc/apt/mirror.list
@@ -9,6 +9,7 @@ run_cleanup(){
 	/bin/bash /var/spool/apt-mirror/var/clean.sh
 }
 
+ls -la /opt/
 mirror_file="/opt/mirror.list"
 if [ -f "$mirror_file" ]
 then
