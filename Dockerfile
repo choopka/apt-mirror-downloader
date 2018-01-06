@@ -19,6 +19,6 @@ COPY run.sh /opt/run.sh
 VOLUME ["/var/spool/apt-mirror/"]
 
 #User-Defined mirror-list volume
-VOLUME ["/opt/"]
+VOLUME ["/tmp/"]
 
 CMD ["/bin/bash", "/opt/run.sh"] 
