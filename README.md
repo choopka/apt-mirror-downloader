@@ -1,5 +1,3 @@
-Still a WIP!
-
 # Introduction
 
 Docker project to download Ubuntu packages by distro using apt-mirror
