@@ -9,8 +9,8 @@ run_cleanup(){
 	/bin/bash /var/spool/apt-mirror/var/clean.sh
 }
 
-ls -la /opt/
-mirror_file="/opt/mirror.list"
+mirror_file="/tmp/mirror.list"
+ls -lah /tmp/
 if [ -f "$mirror_file" ]
 then
 	#Running apt-mirror with custom user mirror.list
